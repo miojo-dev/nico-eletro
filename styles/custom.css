@@ -11,11 +11,77 @@
     animation: fadeIn 0.5s ease-out forwards;
 }
 
+.bg-p-blue {
+    background-color: #211F5D !important;
+}
+.bg-s-blue {
+    background-color: #263772 !important;
+}
+.bg-d-orange {
+    background-color: #610E06 !important;
+}
+.bg-l-orange {
+    background-color: #D76E29 !important;
+}
+.bg-tan {
+    background-color: #EEE5E9 !important;
+}
+
+.text-p-blue {
+    color: #211F5D !important;
+}
+.text-s-blue {
+    color: #263772 !important;
+}
+.text-d-orange {
+    color: #610E06 !important;
+}
+.text-l-orange {
+    color: #D76E29 !important;
+}
+.text-tan {
+    color: #EEE5E9 !important;
+}
+
+/* Custom hover styles */
+
+.hover-bg-p-blue :hover {
+    background-color: #211F5D !important;
+}
+.hover-bg-s-blue :hover {
+    background-color: #263772 !important;
+}
+.hover-bg-d-orange :hover {
+    background-color: #610E06 !important;
+}
+.hover-bg-l-orange :hover {
+    background-color: #D76E29 !important;
+}
+.hover-bg-tan :hover {
+    background-color: #EEE5E9 !important;
+}
+
+.hover-text-p-blue :hover {
+    color: #211F5D !important;
+}
+.hover-text-s-blue :hover {
+    color: #263772 !important;
+}
+.hover-text-d-orange :hover {
+    color: #610E06 !important;
+}
+.hover-text-l-orange :hover {
+    color: #D76E29 !important;
+}
+.hover-text-tan :hover {
+    color: #EEE5E9 !important;
+}
+
 /* Custom utility classes */
 .section-title {
     font-size: 1.875rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #263772;
     margin-bottom: 1.5rem;
     position: relative;
 }
@@ -25,7 +91,7 @@
     display: block;
     width: 4rem;
     height: 0.25rem;
-    background-color: #2563eb;
+    background-color: #610E06;
     margin-top: 0.5rem;
 }
 

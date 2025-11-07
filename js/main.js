@@ -2,25 +2,11 @@
 const produtos = [
     {
         id: 1,
-        nome: 'Smartphone XYZ',
-        descricao: 'Último modelo com câmera de alta resolução',
+        nome: 'Cadera',
+        descricao: 'Cadera massa',
         preco: 1999.99,
         imagem: 'https://via.placeholder.com/300x200?text=Smartphone+XYZ'
     },
-    {
-        id: 2,
-        nome: 'Notebook Pro',
-        descricao: 'Alto desempenho para trabalho e jogos',
-        preco: 4599.99,
-        imagem: 'https://via.placeholder.com/300x200?text=Notebook+Pro'
-    },
-    {
-        id: 3,
-        nome: 'Fones Bluetooth',
-        descricao: 'Áudio de alta qualidade sem fio',
-        preco: 299.99,
-        imagem: 'https://via.placeholder.com/300x200?text=Fones+Bluetooth'
-    }
 ];
 
 // Format currency
@@ -38,14 +24,18 @@ function renderizarProdutos() {
     if (!container) return;
 
     container.innerHTML = produtos.map(produto => `
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="bg-tan rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <img src="${produto.imagem}" alt="${produto.nome}" class="w-full h-48 object-cover">
             <div class="p-4">
                 <h3 class="text-lg font-semibold">${produto.nome}</h3>
                 <p class="text-gray-600 text-sm my-2">${produto.descricao}</p>
                 <div class="flex justify-between items-center mt-4">
-                    <span class="text-blue-600 font-bold">${formatarMoeda(produto.preco)}</span>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                    <span class="text-blue-600 font-bold">
+                        ${formatarMoeda(produto.preco)}
+                    </span>
+                    <button class="bg-s-blue text-tan px-4 py-2 rounded hover-bg-p-blue 
+                    transform hover:scale-105 transition-all duration-200 ease-in-out"
+                    >
                         Comprar
                     </button>
                 </div>
