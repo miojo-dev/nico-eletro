@@ -5,7 +5,7 @@ const produtos = [
         nome: 'Cadera',
         descricao: 'Cadera massa',
         preco: 1999.99,
-        imagem: 'https://via.placeholder.com/300x200?text=Smartphone+XYZ'
+        imagem: 'https://tse3.mm.bing.net/th/id/OIP.Pu8PuSf_1zylw6n1J5DgSQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3'
     },
 ];
 
@@ -17,8 +17,39 @@ function formatarMoeda(valor) {
     });
 }
 
+function RenderHeader() {
+    const header = document.getElementById('header');
+
+    if (!header) return;
+
+    header.innerHTML = `
+    <div class="container mx-auto">
+        <nav class="mt-2 w-full">
+            <a href="index.html" class="block sm:hidden justify-self-center">
+                <img src="../assets/logo.jpeg" class="h-16" alt="Logo Nico Eletro">
+            </a>
+            <ul class="flex space-x-4 items-center sm:justify-start sm:mt-auto mt-4 justify-center">
+                <li class="hidden sm:block">
+                    <a href="index.html">
+                        <img src="../assets/logo.jpeg" class="h-16" alt="Logo Nico Eletro">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#produtos" class="hover:underline">Produtos</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:underline">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="about.html#contato" class="hover:underline">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>`
+}
+
 // Render products
-function renderizarProdutos() {
+function RenderProdutos() {
     const container = document.getElementById('produtos-lista');
 
     if (!container) return;
@@ -46,7 +77,9 @@ function renderizarProdutos() {
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
-    renderizarProdutos();
+    RenderProdutos();
+    RenderHeader();
+
 
     // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
