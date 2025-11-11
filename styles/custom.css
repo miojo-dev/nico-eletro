@@ -43,40 +43,6 @@
     color: #EEE5E9 !important;
 }
 
-/* Custom hover styles */
-
-.hover-bg-p-blue :hover {
-    background-color: #211F5D !important;
-}
-.hover-bg-s-blue :hover {
-    background-color: #263772 !important;
-}
-.hover-bg-d-orange :hover {
-    background-color: #610E06 !important;
-}
-.hover-bg-l-orange :hover {
-    background-color: #D76E29 !important;
-}
-.hover-bg-tan :hover {
-    background-color: #EEE5E9 !important;
-}
-
-.hover-text-p-blue :hover {
-    color: #211F5D !important;
-}
-.hover-text-s-blue :hover {
-    color: #263772 !important;
-}
-.hover-text-d-orange :hover {
-    color: #610E06 !important;
-}
-.hover-text-l-orange :hover {
-    color: #D76E29 !important;
-}
-.hover-text-tan :hover {
-    color: #EEE5E9 !important;
-}
-
 /* Custom utility classes */
 .section-title {
     font-size: 1.875rem;
