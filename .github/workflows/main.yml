@@ -1,5 +1,20 @@
-            - name: Fetch-Docs-CLI
-  # You may pin to the exact commit or the version.
-  # uses: miojo-dev/Fetch-Docs-CLI@0aa779f3678a2379fb0c1da4a45fc7269bec0290
-  uses: miojo-dev/Fetch-Docs-CLI@v1.0.1-Market_init
-          
+name: 🔄 Update README with Onefetch
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update-readme:
+    name: Gerar Onefetch e atualizar README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch-Docs-CLI
+        uses: miojo-dev/Fetch-Docs-CLI@v1.0.2-language_fix
